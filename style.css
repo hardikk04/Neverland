@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: serif;
+  src: url(./PlayfairDisplay-Regular.9647c7fa.woff2);
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  font-family: gilroy;
+}
+
+.page1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page1-text {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  height: 65%;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: salmon; */
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+  padding-right: 4vw;
+  padding-left: 0;
+}
+
+nav > img {
+  height: 6vh;
+  filter: invert(1);
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.nav-line {
+  height: 2px;
+  width: 1.8vw;
+  background-color: #fff;
+}
+
+.page1-hero-text {
+  position: relative;
+  color: #fff;
+  margin-left: 18vw;
+  text-align: center;
+}
+
+.page1-hero-text > h1 {
+  font-family: serif;
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 0.9;
+}
+
+.page1-hero-text > h3 {
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin-top: 1vw;
+}
+
+.page1 > canvas {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.page2 {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fffaf0;
+  text-align: center;
+  padding-top: 1px;
+}
+
+.page2 > img {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60vw;
+}
+
+.page2 > h1 {
+  font-family: serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 4.5vw;
+  margin: 14vw 0;
+  margin-bottom: 12vw;
+}
+
+.page2 > p {
+  font-size: 1.2vw;
+  margin-bottom: 4vw;
+}
+
+.page2 > h3 {
+  font-family: serif;
+  font-weight: 500;
+  line-height: 1;
+  width: 80%;
+  font-size: 4vw;
+  margin: 0 auto;
+  color: #fffaf0;
+}
+
+.page3 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #fffaf0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page3 > p {
+  font-size: 1.2vw;
+  margin-bottom: 4vw;
+}
+
+.page3 > h1 {
+  font-family: serif;
+  font-weight: 500;
+  line-height: 1;
+  width: 70%;
+  font-size: 4vw;
+  margin: 0 auto;
+  margin-bottom: 4vw;
+  color: #fffaf0;
+}
+
+.page4 {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  padding: 4vw;
+  gap: 6vw;
+}
+
+.page4 div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.page4 img {
+  height: 1vw;
+}
+
+.page5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4vw;
+  padding-bottom: 2vw;
+}
+
+.page5 > h1 {
+  font-size: 5vw;
+  line-height: 0.9;
+  font-family: serif;
+  font-weight: 500;
+}
+
+.page6 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page6 > canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.page7 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #fffaf0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 12vw;
+}
+
+.page7 > h3 {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.page7 > h1 {
+  font-family: serif;
+  font-weight: 500;
+  font-size: 4vw;
+  width: 60%;
+  line-height: 0.9;
+  margin-top: 2vw;
+}
+
+.page8 {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+}
+
+.page8-left {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  padding-top: 6vw;
+  padding-left: 12vw;
+  padding-right: 4vw;
+}
+
+.color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fffaf0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.page8-left > h3 {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.page8-left > h1 {
+  font-family: serif;
+  font-weight: 500;
+  font-size: 3.8vw;
+  line-height: 0.9;
+  margin-top: 2vw;
+}
+
+.page8-left > h4 {
+  position: relative;
+  margin-top: 3vw;
+  font-weight: 500;
+  font-size: 0.9vw;
+  display: inline-block;
+  color: rgb(246, 146, 161);
+  cursor: pointer;
+}
+
+.page8-left > h4::after {
+  content: "";
+  position: absolute;
+  bottom: -80%;
+  left: 0;
+  width: 30%;
+  height: 2px;
+  background-color: rgb(246, 146, 161);
+  transition: all ease 0.5s;
+}
+
+.page8-left > h4:hover::after {
+  left: 70%;
+}
+
+.page8-right {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  padding: 6vw;
+}
+
+.page8-right > p {
+  font-size: 1vw;
+  margin-top: 0.3vw;
+}
+
+.page8-right > h3 {
+  font-size: 1vw;
+  margin: 2vw 0;
+}
+
+.page8-right > p:nth-child(6) {
+  margin-top: 6vw;
+  margin-bottom: 1.5vw;
+}
+
+.page8-right > p:nth-child(7) {
+  width: 80%;
+  line-height: 1.4;
+}
+
+.page8-right > h4 {
+  position: relative;
+  margin-top: 3vw;
+  font-weight: 500;
+  font-size: 0.9vw;
+  display: inline-block;
+  color: rgb(246, 146, 161);
+  cursor: pointer;
+}
+
+.page8-right > h4::after {
+  content: "";
+  position: absolute;
+  bottom: -80%;
+  left: 0;
+  width: 30%;
+  height: 2px;
+  background-color: rgb(246, 146, 161);
+  transition: all ease 0.5s;
+}
+
+.page8-right > h4:hover::after {
+  left: 70%;
+}
